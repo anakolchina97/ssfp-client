@@ -27,6 +27,7 @@ function App() {
         }&genre=${filterGenre.toString()}&search=${search}`;
         const { data } = await axios.get(url);
         setObj(data);
+        console.log(data);
       } catch (err) {
         console.log(err);
       }
